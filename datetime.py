@@ -1,6 +1,5 @@
 __author__ = 'anastasia'
 
-
 from datetime import datetime
 
 now = datetime.now()
