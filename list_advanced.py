@@ -22,3 +22,11 @@ middle_third = to_21[7:14]
 # reversing a list
 my_list = range(1, 11)
 backwards = my_list[::-1]
+
+
+# anonymous function, lambda syntax
+my_list = range(16)
+print (filter(lambda x: x % 3 == 0, my_list))
+
+languages = ["HTML", "JavaScript", "Python", "Ruby"]
+print (filter(lambda x: x=="Python", languages))
