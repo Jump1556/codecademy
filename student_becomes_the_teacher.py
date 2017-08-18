@@ -18,6 +18,9 @@ tyler = {
 }
 
 
+students = [lloyd, alice, tyler]
+
+
 def average(numbers):
   total = float(sum(numbers))
   result = total/len(numbers)
@@ -29,6 +32,10 @@ def get_average(student):
   quizzes = average(student["quizzes"])
   tests = average(student["tests"])
   return homework*0.1 + quizzes*0.3 + tests*0.6
+
+print (get_average(lloyd))
+print (get_average(alice))
+print (get_average(tyler))
 
 
 def get_letter_grade(score):
@@ -44,4 +51,14 @@ def get_letter_grade(score):
     return "F"
   
 print (get_letter_grade(get_average(lloyd)))
+print (get_letter_grade(get_average(alice)))
+print (get_letter_grade(get_average(tyler)))
+
+
+def get_class_average(class_list):
+  results = []
+  for student in class_list:
+    results.append(get_average(student))
+  return average(results)
+print(get_class_average(students))
     
