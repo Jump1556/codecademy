@@ -17,8 +17,15 @@ tyler = {
   "tests": [100.0, 100.0]
 }
 
-# Add your function below!
+
 def average(numbers):
   total = float(sum(numbers))
   result = total/len(numbers)
   return result
+
+
+def get_average(student):
+  homework = average(student["homework"])
+  quizzes = average(student["quizzes"])
+  tests = average(student["tests"])
+  return homework*0.1 + quizzes*0.3 + tests*0.6
