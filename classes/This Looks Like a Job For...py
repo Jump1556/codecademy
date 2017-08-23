@@ -7,12 +7,17 @@ class Employee(object):
     self.hours = hours
     return hours * 20.00
 
-# Add your code below!
+# Create a new class
 class PartTimeEmployee(Employee):
+# Create calculate_wage method
   def calculate_wage(self, hours):
     self.hours = hours
     return hours * 12
+
+  # Add a new method full_time_wage
   def full_time_wage(self, hours):
     return super(PartTimeEmployee,self).calculate_wage(hours)
+  
+# Create an instance of the PartTimeEmployee class called milton
 milton = PartTimeEmployee("Alex")
-print milton.full_time_wage(10)
+print (milton.full_time_wage(10))   # print out the result of full_time_wage method
