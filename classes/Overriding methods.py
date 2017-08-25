@@ -9,6 +9,9 @@ class Car (object):
    # add a method named display_car 
    def display_car(self):
     return "This is a " + self.color + " " + self.model + " " + "with " + str(self.mpg) + " " + "MPG" + "."
+   # # add a method named drive_car
+   def drive_car(self):
+    self.condition = "used"
 
 my_car = Car("DeLorean", "silver", 88)
 #an object(instance of class)
@@ -17,4 +20,5 @@ color = "silver"
 mpg = 88
 
 print (my_car.condition)
-print (my_car.display_car())
+my_car.drive_car()
+print (my_car.condition)
