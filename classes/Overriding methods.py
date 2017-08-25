@@ -6,12 +6,13 @@ class Car (object):
     self.color = color
     self.mpg = mpg
     condition = "new"     # member variables
+   # add a method named display_car 
+   def display_car(self):
+    return "This is a " + self.color + " " + self.model + " " + "with " + str(self.mpg) + " " + "MPG" + "."
+
 my_car = Car("DeLorean", "silver", 88)
 #an object(instance of class)
 model = "DeLorean"
 color = "silver"
 mpg = 88
-# print my_car member variables:
-print (my_car.model)
-print (my_car.color)
-print(my_car.mpg)
+print (my_car.display_car())
