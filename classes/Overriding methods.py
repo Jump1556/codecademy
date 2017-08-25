@@ -11,3 +11,7 @@ my_car = Car("DeLorean", "silver", 88)
 model = "DeLorean"
 color = "silver"
 mpg = 88
+# print my_car member variables:
+print (my_car.model)
+print (my_car.color)
+print(my_car.mpg)
