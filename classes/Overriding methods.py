@@ -34,4 +34,5 @@ my_car = ElectricCar("Volvo", "red", 25,"molten salt")
 print (my_car.condition)
 my_car.drive_car()
 print (my_car.condition)
+print (my_car.display_car())
 
