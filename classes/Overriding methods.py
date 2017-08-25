@@ -18,7 +18,20 @@ my_car = Car("DeLorean", "silver", 88)
 model = "DeLorean"
 color = "silver"
 mpg = 88
+print (my_car.display_car())
+
+# Create a class ElectricCar that inherits from Car
+class ElectricCar (Car):
+  def __init__ (self, model, color, mpg, battery_type):     # __init__() method
+    super(ElectricCar, self).__init__(model, color, mpg)
+    self.battery_type = battery_type
+    
+  def drive_car(self):
+    self.condition = "like new"
+      
+my_car = ElectricCar("Volvo", "red", 25,"molten salt")
 
 print (my_car.condition)
 my_car.drive_car()
 print (my_car.condition)
+
